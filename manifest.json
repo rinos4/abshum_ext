@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Tenki.jp 容積絶対湿度付与拡張",
+  "version": "1.0",
+  "description": "tenki.jpの1時間予報ページに絶対湿度を追加",
+  "icons": {
+    "128": "icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://tenki.jp/forecast/*/1hour.html"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
